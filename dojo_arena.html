@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="dojo_arena.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#beach').click(function() {
+        $('.container').css('background-image', 'url(beach.jpg)');
+      });
+      $('#planet').click(function(){
+        $('.container').css('background-image', 'url(earth.jpg)');
+      });
+      $('#dojo').click(function(){
+        $('.container').css('background-image', 'url(dojo.jpg)');
+      });
+      $('#forest').click(function(){
+        $('.container').css('background-image', 'url(forest.jpg)');
+      });
+
+    });
+  </script>
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <div class="menu">
+        <h1>Select Arena</h1>
+        <button id='beach' type="button" name="button">beach</button>
+        <button id='planet' type="button" name="button">planet</button>
+        <button id='dojo' type="button" name="button">dojo</button>
+        <button id='forest' type="button" name="button">forest</button>
+        <button id='matrix' type="button" name="button">matrix</button>
+        <button id='snow' type="button" name="button">snow</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
