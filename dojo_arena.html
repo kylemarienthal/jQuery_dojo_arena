@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>Dojo Arena</title>
   <link rel="stylesheet" href="dojo_arena.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script type="text/javascript">
@@ -20,6 +20,21 @@
       $('#forest').click(function(){
         $('.container').css('background-image', 'url(forest.jpg)');
       });
+      $('#matrix').click(function(){
+        $('.container').css('background-image', 'url(matrix.jpg)');
+      });
+      $('#snow').click(function(){
+        $('.container').css('background-image', 'url(snow.jpg)');
+      });
+
+      $('button').click(function(){
+        $('.menu').replaceWith('<div class="menu"><h1>Select Turtle</h1><select><option selected disabled>Player 1</option><option class="leo">LEO</option><option class="donny" >DONNY</option><option class="mikey">MIKEY</option><option class="raph" >RAPH</option></select><select><option selected disabled>Player 2</option><option class="leo">LEO</option><option class="donny" >DONNY</option><option class="mikey">MIKEY</option><option class="raph" >RAPH</option></select></div>');
+      });
+
+      $('.leo').click(function(){
+        $('.container')
+
+      })
 
     });
   </script>

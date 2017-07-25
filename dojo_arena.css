@@ -41,3 +41,9 @@ button{
   /*margin-left: 7px;*/
   margin-top: 5px;
 }
+select{
+  width: 97px;
+  margin-left: 10px;
+  font-size: 8px;
+  border-radius: 5px;
+}
