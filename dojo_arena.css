@@ -28,7 +28,7 @@ h1{
   height: 150px;
   background-color: #a3a4a6;
   border: solid thick #808080;
-  margin: 147px auto;
+  margin: 97px auto 0px;
   opacity: .75;
 
 }
@@ -46,4 +46,13 @@ select{
   margin-left: 10px;
   font-size: 8px;
   border-radius: 5px;
+}
+.left_image,.right_image{
+  width: 150px;
+  /*height: 15px;*/
+  /*outline-color: red;*/
+  /*background-color: blue;*/
+}
+.right_image{
+  margin-left: 180px;
 }

@@ -29,14 +29,34 @@
 
       $('button').click(function(){
         $('.menu').replaceWith('<div class="menu"><h1>Select Turtle</h1><select><option selected disabled>Player 1</option><option class="leo">LEO</option><option class="donny" >DONNY</option><option class="mikey">MIKEY</option><option class="raph" >RAPH</option></select><select><option selected disabled>Player 2</option><option class="leo">LEO</option><option class="donny" >DONNY</option><option class="mikey">MIKEY</option><option class="raph" >RAPH</option></select></div>');
+        $(document).on('click','select',function(){
+          $('select').change(function(){
+            var whichone=$(this).attr("class");
+            if(whichone == 'leo'){
+              <img class='left_image' src="/leo.png">
+            }else if(whichone == 'donny'){
+              <img src='/donny.png'
+            };
+          });
+        });
+        });
       });
-
-      $('.leo').click(function(){
-        $('.container')
-
-      })
-
     });
+
+
+      // $('select option').click(() => {
+      //   $('.left_image').html(`<img id='char'  src='http://pokeapi.co/media/img/${1}.png'>`)
+      //
+        //     for (var i = 2; i <= 151; i++) {
+        //       $('.pokemon').append(`<img id='char'  src='http://pokeapi.co/media/img/${i}.png'>`);
+        //     };
+        //     $('.pokemon').css('background-color', 'blue')
+        //     $('.info').css('background-color', 'red')
+        //   });
+
+
+
+
   </script>
 
 </head>
@@ -53,6 +73,9 @@
         <button id='matrix' type="button" name="button">matrix</button>
         <button id='snow' type="button" name="button">snow</button>
       </div>
+
+      <img class= 'left_image' src="">
+      <img class= 'right_image' src="">
     </div>
   </div>
 
